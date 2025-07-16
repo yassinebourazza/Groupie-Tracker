@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+     
+    <div class="grid-container">
+      <div class="title">Groupie Tracker</div>
+      {{range .}}
+    
+        <div class="item">
+
+          <img src="{{.Image}}" alt="image">
+          <br>
+          <button class="Name">{{.Name}}</button>
+          
+
+        </div>
+         
+      {{end}}
+      
+</div>
+<textarea name="" id=""></textarea>
+
+
+</body>
+</html>
