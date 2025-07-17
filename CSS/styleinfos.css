@@ -1,0 +1,125 @@
+body {
+  background-color: #e0e0e0;
+}
+
+.grid-container {
+  display: grid;
+  height: 1000px;
+  width:  1400px;
+  line-height-step: 80%;
+  border-radius: 40px;
+  background-color: #f0f0f0;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  padding: 50px;
+  gap: 25px;
+}
+
+.Name {
+  height: 30px;
+  background-color: #c5c5c5;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 30px;
+  margin-top: -5px;
+  grid-column: 1/-1;
+  transition:0.2s;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.pack {
+    height: 95%;
+background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  overflow: hidden;
+  border-radius: 40px;
+  padding: 20px;
+  grid-column: 1/3;
+  grid-row: 1 / 5;
+ 
+  
+}
+
+.pack2 {
+  height: 95%;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  border-radius: 40px;
+  margin-top: 10px;
+  padding: 10px;
+  grid-column: 1/3;
+  grid-row: 5 / 9;
+  grid-template-rows: repeat(20, 1fr); 
+}
+
+.pack3 {
+    height: 95%;
+background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+  overflow: hidden;
+  border-radius: 40px;
+  padding: 30px;
+  grid-column: 3/-1;
+  grid-row: 1 / -1;
+}
+
+img {
+  width: 342px;
+  justify-self: center;
+  background-color: aqua;
+  border-radius: 30px;
+  height: 100%;
+  overflow: hidden;
+  grid-row: 1/8;
+   
+}
+
+.Name2 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 200%;
+    font-weight: 1000;
+    grid-column: 1/-1;
+    margin-top: 20px;
+    grid-row: 8;
+}
+
+.CreationDate2 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 170%;
+  font-weight: bolder;
+  grid-column: 1/-1;
+  margin-top: 10px;
+  grid-row: 9;
+}
+
+.pack2 .Title2 {
+  
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 200%;
+    font-weight: 1000;
+    grid-column: 1/-1;
+    margin-top: 20px;
+  
+}
+
+.pack2 .Content {
+
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 800;
+  font-size: 180%;
+  margin-top: 30px;
+
+  
+}

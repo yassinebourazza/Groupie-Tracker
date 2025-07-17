@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/CSS/styleinfos.css">
+    <title>Document2</title>
+</head>
+<body>
+    
+
+    <div class="grid-container">
+      <div class="pack">
+          
+          <img class="image2" src="{{.Image}}" alt="image" >
+          <div class="Name2">{{.Name}}</div>
+          <div Class="CreationDate2">{{.CreationDate}}</div>
+
+      </div>
+
+      <div class="pack2">
+        <div class="Title2">Members :</div>
+        <div class="Content">
+          {{range .Members}}
+            <div class="Member2"> - {{.}}</div>
+          {{end}}
+        </div>
+      
+
+      </div>
+
+      <div class="pack3">
+        
+      </div>
+       
+    </div>
+
+
+</body>
+</html>

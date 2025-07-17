@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+ 
+    <div class="grid-container">
+      <div class="title">Groupie Tracker</div>
+
+      {{range .}}
+        <a class="item" href="/infos/{{.Id}}">
+          <img class="image" src="{{.Image}}">
+          <div class="info">
+              <button class="Name">{{.Name}}</button>
+            <div class="CreationDate">{{.CreationDate}}</div>
+          </div>
+        </a>
+      {{end}}
+
+    </div>
+  
+
+
+
+</body>
+
+</html>
