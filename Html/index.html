@@ -14,12 +14,15 @@
       <div class="title">Groupie Tracker</div>
 
       {{range .}}
-        <a class="item" href="/infos/{{.Id}}">
-          <img class="image" src="{{.Image}}">
+      <a  href="/infos/{{.Id}}" >
+      <div class="item">
+             <img class="image" src="{{.Image}}">
           <div class="info">
-              <button class="Name">{{.Name}}</button>
+              <div class="Name">{{.Name}}</div>
             <div class="CreationDate">{{.CreationDate}}</div>
           </div>
+          </div>
+         
         </a>
       {{end}}
 

@@ -49,7 +49,7 @@ background-color: rgb(255, 255, 255);
 
 .pack:hover {
   background-color: rgb(255, 0, 76);
-  box-shadow: 0 0 20px rgb(255, 0, 76);;
+  box-shadow: 0 0 20px rgb(255, 0, 76);
   color: aliceblue;
 }
 
@@ -65,6 +65,13 @@ background-color: rgb(255, 255, 255);
   grid-column: 1/3;
   grid-row: 5 / 9;
   grid-template-rows: repeat(20, 1fr); 
+  transition: 0.5s;
+}
+
+.pack2:hover {
+  background-color: rgb(255, 0, 76);
+  box-shadow: 0 0 20px rgb(255, 0, 76);
+  color: aliceblue;
 }
 
 .pack3 {
@@ -139,6 +146,13 @@ img {
     padding: 15px;
     border-radius: 30px;
   
+}
+
+.Title2:hover {
+  background-color: aliceblue;
+  box-shadow: 0 0 20px #f0f0f0;
+  color: rgb(255, 0, 76);
+
 }
 
 .pack2 .Content {
