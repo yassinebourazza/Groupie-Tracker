@@ -18,25 +18,22 @@ body {
 
 
 .item .image {
-  height: 100%;
-  border-radius: 10px;
-  width: 100%;
-  grid-row: 1/7;  
-
-}
+     height: 100%;
+    border-radius: 25px;
+    width: 100%;
+    grid-row: 1 / 7;
+}  
 
 .Name {
-  height: 30px;
-  background-color: #c5c5c5;
-  color: #000000;
-  font-size: 16px;
-  font-weight: bolder;
-  border-radius: 30px;
-  margin-top: -5px;
-  grid-column: 1/-1;
-  transition:0.2s;
-  border: none;
-  cursor: pointer;
+     height: 35px;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 900;
+    margin-top: -5px;
+    grid-column: 1 / -1;
+    transition: 0.2s;
+    border: none;
+    cursor: pointer;
   
 }
 
@@ -45,9 +42,11 @@ body {
 }
 
 .info .CreationDate {
-  color: #696969;
-  margin-left: 5px;
-  grid-row: 7;
+      font-family: system-ui;
+    color: #4f4f4f;
+    margin-left: 5px;
+    font-weight: 900;
+
 }
 
 .Name:hover {
@@ -72,18 +71,17 @@ body {
 
 .item {
 
-  background-color: #ffffff;
-  color: rgb(255, 255, 255);
-  height: 210px;
-  padding: 18px;
-  align-items: center;
-  border-radius: 10px;
-  gap: 15px;
-  display: grid;
-  grid-template-rows: 30% 1fr;
-  box-shadow: #000000 0px 0px 20px rgba(0, 0, 0, 0.5);
-  outline: 2px solid #00000013;
-  transition: 0.2s;
+      background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    height: 210px;
+    padding: 18px;
+    align-items: center;
+    border-radius: 35px;
+    gap: 16px;
+    display: grid;
+    grid-template-rows: 30% 1fr;
+    box-shadow: #000000 0px 0px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
 
 }
 

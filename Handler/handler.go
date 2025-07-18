@@ -6,28 +6,6 @@ import (
 	"text/template"
 )
 
-type Data struct {
-	ArtistrLink   string `json:"artists"`
-	LocationsLink string `json:"locations"`
-	DatesLink     string `json:"dates"`
-	RelationLink  string `json:"relation"`
-}
-
-type Person struct {
-	Id           int      `json:"id"`
-	Image        string   `json:"image"`
-	Name         string   `json:"name"`
-	Members      []string `json:"members"`
-	CreationDate int      `json:"creationDate"`
-	Locations    []string   `json:"locations"`
-	Dates        []string   `json:"dates"`
-	Relation     []string   `json:"relation"`
-}
-
-var (
-	FirstData Data
-	Artist    []Person
-)
 
 func Handler(w http.ResponseWriter, r *http.Request) {
 	FirstResponse, err := http.Get("https://groupietrackers.herokuapp.com/api")

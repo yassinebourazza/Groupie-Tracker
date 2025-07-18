@@ -44,13 +44,18 @@ background-color: rgb(255, 255, 255);
   padding: 20px;
   grid-column: 1/3;
   grid-row: 1 / 5;
- 
-  
+  transition: 0.5s;
+}
+
+.pack:hover {
+  background-color: rgb(255, 0, 76);
+  box-shadow: 0 0 20px rgb(255, 0, 76);;
+  color: aliceblue;
 }
 
 .pack2 {
   height: 95%;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   display: grid;
   justify-items: center;
   align-content: center;
@@ -72,6 +77,21 @@ background-color: rgb(255, 255, 255);
   padding: 30px;
   grid-column: 3/-1;
   grid-row: 1 / -1;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lch(88.82% 0.01 296.81);
+  border-radius: 4px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5c5c5;
 }
 
 img {
@@ -86,30 +106,38 @@ img {
 }
 
 .Name2 {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 200%;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 259%;
     font-weight: 1000;
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
     margin-top: 20px;
+    margin-left: 10px;
     grid-row: 8;
 }
 
 .CreationDate2 {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 170%;
-  font-weight: bolder;
-  grid-column: 1/-1;
-  margin-top: 10px;
-  grid-row: 9;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 202%;
+    font-weight: bolder;
+    grid-column: 1 / -1;
+    margin-top: 6px;
+    margin-left: 12px;
+    grid-row: 9;
 }
 
 .pack2 .Title2 {
   
-   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+       color: aliceblue;
     font-size: 200%;
+    width: 83%;
     font-weight: 1000;
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
     margin-top: 20px;
+    text-align: center;
+    background-color: rgb(255, 0, 76);
+    padding: 15px;
+    border-radius: 30px;
   
 }
 
@@ -122,4 +150,26 @@ img {
   margin-top: 30px;
 
   
+}
+.Key {
+        font-weight: bolder;
+    font-family: arial;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 180%;
+    margin-top: 30px;
+    text-align: center;
+    background-color: rgb(255, 0, 76);
+    color: aliceblue;
+    padding: 10px;
+    border-radius: inherit;
+}
+
+
+.Value {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 800;
+  font-size: 180%;
+  margin-top: 30px;
 }
