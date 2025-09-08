@@ -2,15 +2,19 @@ package main
 
 import (
 	"fmt"
+	groupietracker "groupietracker/handlers"
 	"net/http"
-	"GroupieTracker/Handler" // Adjust the import path as necessary
 )
 
 func main() {
-	fs := http.FileServer(http.Dir("CSS"))
-	http.Handle("/CSS/", http.StripPrefix("/CSS/", fs))
-	http.HandleFunc("/", GroupieTracker.Handler)
-	http.HandleFunc("/infos/", GroupieTracker.HandlerRes)
-	fmt.Println("Server is running on port http://localhost:8080")
-	http.ListenAndServe(":8080", nil)
+	http.HandleFunc("/",groupietracker.HandlHome)
+	http.HandleFunc("/infos/",groupietracker.InfoHandler)
+	http.HandleFunc("/static/",groupietracker.HandleStatic)
+	http.HandleFunc("/about",groupietracker.AboutHandler)
+	http.HandleFunc("/contact",groupietracker.ContactHandler)
+	fmt.Print("the server work on: http://localhost:8080")
+	err := http.ListenAndServe(":8080", nil)
+	if err != nil {
+		fmt.Println("Server Error", err)
+	}
 }

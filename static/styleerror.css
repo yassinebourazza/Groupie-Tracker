@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15%;
+}
+.errorSection {
+  text-align: center;
+  background: #fff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  max-width: 360px;
+  width: 90%;
+}
+
+.statusCode {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #e74c3c; 
+  margin: 0 0 20px 0;
+}
+
+.errorText {
+  font-size: 1.25rem;
+  margin: 0 0 30px 0;
+  color: #555;
+}
+
+.btnBack {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #3b5998; 
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btnBack:hover {
+  background-color: #2980b9; 
+}

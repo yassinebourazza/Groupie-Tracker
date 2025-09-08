@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/{{.Mode}}styleinfos.css">
+    <title>Infos</title>
+</head>
+<body>
+    
+   <nav class="navbar">
+    <h1 class="title"><a href="/">MyGroupie</a></h1> 
+    <ul class="list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+    <div class="grid-container">
+      <div class="pack">
+          
+          <img class="image2" src="{{.Artist.Image}}" alt="image" >
+          <div class="Name2">{{.Artist.Name}}</div>
+          <div Class="CreationDate2">{{.Artist.CreationDate}}</div>
+
+      </div>
+
+      <div class="pack2">
+        <div class="Title2">Members</div>
+        <div class="Content">
+         {{range .Artist.Members}}
+            <div class="Members">● {{.}}</div>
+          {{end}}
+        </div>
+      
+
+      </div>
+    
+      <div class="pack3">
+        <div class="Key">FirstAlbum</div>
+           <div class="Value">
+               {{.Artist.FirstAlbum}}
+             </div>
+        <div class="Key">Locations</div>
+           {{range  .Locations}}
+           <div class="Value">
+               {{.}}
+             </div>
+          <br>
+          {{end}}
+          <br>
+          <div class="Key">concertDates</div>
+             {{range  .Dates}}
+             <div class="Value">
+               {{.}}
+             </div>
+          <br>
+          {{end}}
+          <br>
+          <div class="Key">Relations</div>
+        {{range $key,$value := .Relations}}
+          <div class="Key2">{{$key}}</div>
+          {{range .}}
+          <div class="Value">{{.}}</div>
+          {{end}}
+          {{end}}
+      </div>
+       
+    </div>
+
+
+</body>
+</html>
