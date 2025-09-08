@@ -10,7 +10,7 @@
 <body>
 
   <nav class="navbar">
-    <h1 class="title"><a href="/">MyGroupie</a></h1> 
+    <h1 class="title"><a href="/">MyGroupie</a></h1>
     <ul class="list">
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
@@ -19,29 +19,81 @@
   </nav>
 
   <div class="page">
-
     <div class="container1">
+      <form class="Options" action="/" method="post">
+        <button type="submit" name="MusicType" value="All">
+          <div class="Icon">
+
+            <img src="../static/Assets/Music.png">
+            <div class="Name">All Artists</div>
+          </div>
+        </button>
+        <button type="submit" name="MusicType" value="Hip-Hop">
+          <div class="Icon">
+            <img src="../static/Assets/Music.png">
+            <div class="Name">Hip-Hop</div>
+
+          </div>
+        </button>
+        <button type="submit" name="MusicType" value="Pop">
+          <div class="Icon">
+
+            <img src="../static/Assets/Music.png">
+            <div class="Name">Pop</div>
+          </div>
+        </button>
+        <button type="submit" name="MusicType" value="Classic Rock">
+          <div class="Icon">
+
+            <img src="../static/Assets/Music.png">
+            <div class="Name">Classic Rock</div>
+          </div>
+        </button>
+        <button type="submit" name="MusicType" value="Hark Rock">
+          <div class="Icon">
+
+            <img src="../static/Assets/Music.png">
+            <div class="Name">Hard Rock</div>
+          </div>
+        </button>
+        <button type="submit" name="MusicType" value="Modern Rock">
+          <div class="Icon">
+
+            <img src="../static/Assets/Music.png">
+            <div class="Name">Modern Rock</div>
+          </div>
+        </button>
+        <button type="submit" name="MusicType" value="Diverse Genres">
+          <div class="Icon">
+
+            <img src="../static/Assets/Music.png">
+            <div class="Name">Diverse Genres</div>
+          </div>
+        </button>
+      </form>
 
     </div>
-    
+
     <div class="container2">
+      <div class="Profiles">
 
-      {{range .}}
-      <a  href="/infos/{{.Id}}" >
-      <div class="item">
-             <img class="image" src="{{.Image}}">
-          <div class="info">
+        {{range .}}
+        <a href="/infos/{{.Id}}">
+          <div class="item">
+            <img class="image" src="{{.Image}}">
+            <div class="info">
               <div class="Name">{{.Name}}</div>
-            <div class="CreationDate">{{.CreationDate}}</div>
+              <div class="CreationDate">{{.CreationDate}}</div>
+            </div>
           </div>
-          </div>
-         
-        </a>
-      {{end}}
 
+        </a>
+        {{end}}
+
+      </div>
     </div>
   </div>
-  
+
 
 
 
