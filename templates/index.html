@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/static/style.css">
   <title>Home</title>
 </head>
@@ -11,11 +12,13 @@
 
   <nav class="navbar">
     <h1 class="title"><a href="/">MyGroupie</a></h1>
-    <ul class="list">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
+       <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu">≡</label>
+      <ul class="list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
   </nav>
 
   <div class="page">
@@ -62,7 +65,7 @@
           
           <img class="typeImage" src="../static/Assets/diversegenres.png">
           <div class="typeName">Diverse Genres</div>
-            <button class="select" type="submit" name="MusicType" value="Diverse genres" >Select</button>
+            <button class="select" type="submit" name="MusicType" value="Diverse Genres" >Select</button>
           </div>
       </form>
 

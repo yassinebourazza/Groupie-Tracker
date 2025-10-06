@@ -74,7 +74,7 @@ var diverseGenres = []string{
 	"R3HAB",
 }
 
-//Handle and shows the home page 
+// Handle and shows the home page
 func HandlHome(w http.ResponseWriter, r *http.Request) {
 	Fetch(w)
 
@@ -93,19 +93,19 @@ func HandlHome(w http.ResponseWriter, r *http.Request) {
 		compare = pop
 	case "Classic Rock":
 		compare = classicRock
-	case "Hark Rock":
+	case "Hard Rock":
 		compare = hardRock
 	case "Modern Rock":
 		compare = ModernRock
 	case "Diverse Genres":
 		compare = diverseGenres
-	default :
-	compare = nil
+	default:
+		compare = nil
 	}
 
 	var someArtist []artist
 	if compare != nil {
-		for _,artist := range artists {
+		for _, artist := range artists {
 			if TheArtistExist(artist.Name, compare) {
 				someArtist = append(someArtist, artist)
 			}
@@ -113,8 +113,6 @@ func HandlHome(w http.ResponseWriter, r *http.Request) {
 	} else {
 		someArtist = append(someArtist, artists...)
 	}
-	
-
 
 	temp, err := template.ParseFiles("templates/index.html")
 	if err != nil {
@@ -122,10 +120,10 @@ func HandlHome(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	temp.Execute(w,someArtist)
+	temp.Execute(w, someArtist)
 }
 
-func TheArtistExist(artistName string,compare []string) bool {
+func TheArtistExist(artistName string, compare []string) bool {
 	for _, artist := range compare {
 		if artistName == artist {
 			return true
