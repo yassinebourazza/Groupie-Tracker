@@ -113,89 +113,6 @@ li a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 780px) {
- 
-  .menu {
-    display: inline-block;
-    font-size: 40px;
-  }
-  .list {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    right :0px;
-    background-color: var(--color1);
-    gap: 30px;
-    padding: 30px;
-  }
-
-
-  li a:hover {
-    display: inline;
-    background-color: var(--color2);
-    color: var(--color5);
-    border-radius: 15px;
-  }
-
-  #menu-toggle:checked + .menu + .list {
-    display: flex;
-    align-items: center;
-  }
-  
-  .page {
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    
-  }
-  .container1 {
-    width: 100%;
-    grid-column: 1/-1;
-    grid-row: 1;
-  }
-  .Options {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .container1 .Icon:nth-child(1) {
-    grid-column: 1/-1;
-  }
-  
-
-  .container2 {
-    grid-column: 1/-1;
-    grid-row: 2;
-  }
-
-  .container5 {
-    grid-column: 1/-1;
-    grid-row: 1;
-  }
-
-  .Icon {
-    height: 120px;
-  }
-  .Icon .typeImage {
-    display: none;
-  }
-  .Icon .typeName {
-    font-size: 20px;
-    grid-column: 1/-1;
-    justify-content: center;
-  }
-
-  .Icon .select {
-    font-size: 20px;
-    grid-column: 1/-1;
-  }
-
-  
-}
-
 .Profiles {
   background-color: var(--color1);
   display: grid;
@@ -226,7 +143,6 @@ li a:hover {
   font-family: arial;
   font-weight: 900;
   font-size: 180%;
-  
   text-align: center;
   background-color: var(--color4);
   color: var(--color1);
@@ -382,16 +298,6 @@ li a:hover {
   transform: scale(1.05);
 }
 
-.switch {
-
-  background-color: #ffffff00;
-  color: var(--color5);
-  border: 5px solid var(--color5);
-  padding: 2px 5px 5px 25px;
-  border-radius: 50px;
-
-}
-
 button {
   width: 100%;
   border: none;
@@ -414,15 +320,15 @@ button {
 }
 
 .Icon:hover {
-  height: 150px;
+  height: 130px;
   grid-template-columns: repeat(6, 1fr);
   transform: scale(1.05);
 }
 
 .Icon:hover .select {
-  font-size: 25px;
+  font-size: 30px; 
   font-weight: 900;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: var(--color1);
   border-radius: 30px;
   color: var(--color4);
@@ -449,6 +355,7 @@ button {
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .Icon:hover .typeName {
@@ -469,6 +376,7 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
+
 
 .select:hover {
   transform: scale(1.05);
@@ -508,4 +416,218 @@ button {
 .container1 .Icon:nth-child(7):hover {
   background-color: #ff4848;
   box-shadow: 0px 0px 10px #ff4848;
+}
+
+@media (max-width:1350px) and (min-width:769px) {
+
+   .page {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
+  }
+
+  .container1 {
+    grid-column: 1;
+    grid-row: 1;
+    
+  }
+  
+  .Options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .container2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .typeName{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+  }
+ 
+
+   .container5 {
+    grid-column: 1/-1;
+   }
+ 
+}
+
+
+
+@media (max-width: 768px) {
+  .menu {
+    display: inline-block;
+    font-size: 40px;
+  }
+  .list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    right :0px;
+    background-color: var(--color1);
+    gap: 30px;
+    padding: 30px;
+  }
+
+
+  li a:hover {
+    display: inline;
+    background-color: var(--color2);
+    color: var(--color5);
+    border-radius: 15px;
+  }
+
+  #menu-toggle:checked + .menu + .list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .page {
+    width: 100%;
+    grid-template-rows: auto;
+    
+  }
+  .container1 {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .Options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container1 .Icon:nth-child(1) {
+    grid-column: 1/-1;
+  }
+  
+  .container2 {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+
+
+  .Icon .typeImage {
+    display: none;
+  }
+  .Icon .typeName {
+    font-size: 20px;
+    grid-column: 1/-1;
+    justify-content: center;
+  }
+
+  .Icon .select {
+    font-size: 20px;
+    grid-column: 1/-1;
+  }
+
+   .container6{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .creator_image {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/7;
+  }
+  .creator_name {
+    grid-column: 1/-1;
+    grid-row: 7;
+  }
+  #linkedin {
+    grid-column: 2;
+    grid-row: 8;
+  }
+  #github {
+    grid-column: 1;
+    grid-row: 8;
+  }
+    .container5 {
+    grid-column: 1/-1;
+    
+  }
+  .Icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  
+}
+
+@media (max-width: 500px) {
+
+  .page, .container1, .container2, .container3, .container5{
+    padding: 30px;
+  }
+  .Profiles {
+    padding: 0px;
+  }
+
+  .Options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Icon {
+    height: 80px;
+  }
+
+  .Icon:hover {
+    height: 120px;
+  }
+
+  .container5 {
+    gap: 20px;
+  }
+
+   .container6{
+    grid-template-columns: 50% 50%;
+    height: 300px;
+    padding: 20px;
+    grid-template-rows: repeat(7, 1fr);
+  }
+
+  .creator_image {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/6;
+  }
+  .creator_name {
+    grid-row: 6;
+  }
+  #linkedin {
+    grid-column: 2;
+    grid-row:7;
+  }
+  #github {
+    grid-column: 1;
+    grid-row: 7;
+  }
+
+  .Key {
+    font-size: 100%;
+  }
+  .Key2 {
+    font-size: 100%;
+  }
+  .Value {
+    font-size: 100%;
+  }
 }
