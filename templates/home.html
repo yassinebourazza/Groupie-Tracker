@@ -22,7 +22,7 @@
   </nav>
 
   <div class="page">
-    <div class="container1">
+    <div class="home-container1">
       <input type="checkbox" id="click">
       <form class="Options" action="/" method="post">
         <div class="Icon">
@@ -71,17 +71,15 @@
 
     </div>
 
-    <div class="container2">
-      <div class="Profiles">
+    <div class="home-container2">
+      <div class="artist-container">
 
         {{range .}}
         <a href="/infos/{{.Id}}">
-          <div class="item">
-            <img class="image" src="{{.Image}}">
-            <div class="info">
-              <div class="Name">{{.Name}}</div>
-              <div class="CreationDate">{{.CreationDate}}</div>
-            </div>
+          <div class="artist-item">
+            <img class="artist-image" src="{{.Image}}">
+              <div class="artist-name">{{.Name}}</div>
+              <div class="artist-creationDate">{{.CreationDate}}</div>
           </div>
 
         </a>

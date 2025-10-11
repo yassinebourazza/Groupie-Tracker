@@ -9,7 +9,6 @@ import (
 
 //Handle the informations comming from the api by id
 func InfoHandler(w http.ResponseWriter, r *http.Request) {
-	Fetch(w)
 	if !(r.Method == http.MethodGet ) {
 		ErrorHandler(w, "Method not allowed", http.StatusMethodNotAllowed)
 		return

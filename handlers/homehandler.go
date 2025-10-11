@@ -114,7 +114,7 @@ func HandlHome(w http.ResponseWriter, r *http.Request) {
 		someArtist = append(someArtist, artists...)
 	}
 
-	temp, err := template.ParseFiles("templates/index.html")
+	temp, err := template.ParseFiles("templates/home.html")
 	if err != nil {
 		ErrorHandler(w, "Internal Server Error", http.StatusInternalServerError)
 		return
